@@ -1,0 +1,86 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cruds2.css">
+    <link rel="stylesheet" href="./imeges/icomoon/style.css">
+    <script defer src="Cruds2.js"></script>
+    <script defer src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script defer src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <title>CRUDS Project</title>
+    
+</head>
+<body>
+    <div class="clocking">
+        <h2 id="clock">
+            <span></span>
+            <span></span>
+            <span></span>
+        </h2>
+    <div class="cruds">
+        
+        </div>
+        <div class="head">
+            <h1>CRUDS</h1>
+            
+            <p>PROJECT MANAGEMENT SYSTEM</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Content Input Section -->
+        <div class="content-input">
+            <div class="input">
+                <input type="text" id = "title" placeholder="Title">
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                    <input onkeyup="getTotal()" type="number" id="tax" placeholder="Tax">
+                    <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+                    <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+                    <small id="total"></small>
+                </div>
+                <input type="number" id="count" placeholder="Count">
+                <input type="text" id="category" placeholder="Category">
+                <button id="submit">Create</button>
+            </div>
+        </div>
+
+        <!-- Content Output Section -->
+        <div class="content-output">
+            <div class="output">
+                <div class="searchBlock">
+                    <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+                    <div class="btnSearch">
+                        <button onclick="getSearchMood(this.id)" id="searchByTitle">Search By Title</button>
+                        <button onclick="getSearchMood(this.id)" id="searchByCategory">Search By Category</button>
+                    </div>
+                </div>
+                <div id="deleteAll"></div>
+                <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Tax</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                        <!-- Rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<p class="Creating">Created By Sayed Abdellatif</p>
+</body>
+</html>
+
+    
