@@ -1,6 +1,3 @@
 A CRUD project refers to a software application or module that implements the four basic operations of persistent storage:
-Create, Read, Update, and Delete. These operations are commonly applied to manage data within a database. Example Description: "A
-CRUD project involves designing and implementing an application that enables users to perform Create, Read, Update, and Delete
-operations on a dataset. The project typically includes a user-friendly interface and a backend system that communicates
-with a database to store and manipulate data. CRUD functionality is fundamental to many applications, such as inventory management,
-user account systems, or content management platforms.
+Create, Read, Update, and Delete. These operations are commonly applied to manage data within a database. Example Description: "A CRUD project involves designing and implementing an application that enables users to perform Create, Read, Update, and Delete
+operations on a dataset. The project typically includes a user-friendly interface and a backend system that communicates with a database to store and manipulate data. CRUD functionality is fundamental to many applications, such as inventory management, user account systems, or content management platforms.
